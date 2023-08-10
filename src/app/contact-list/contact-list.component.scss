@@ -1,0 +1,13 @@
+@import '../../styles.scss';
+
+.contact-main {
+    height: 100%;
+    width: 25vw;
+    background-color: $background;
+}
+
+.header {
+    border-bottom: 1px solid $border-color;
+    padding: $padding;
+    //height: 3dvh;
+}
