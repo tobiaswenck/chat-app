@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-list.component.scss']
 })
 export class ContactListComponent {
+  chatItemClass: string = 'active'; // Set your desired CSS class name
 
+  
+  
 }

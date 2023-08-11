@@ -7,20 +7,32 @@
     display: flex;
     flex-direction: column;
     //overflow-y: scroll;
+    //justify-content: center;
+    align-items: center;
+    border-left: $border;
+    border-right: $border;
 }
 
 .header {
-    padding: $padding;
+    width: 100%;
+
+    //padding: $padding;
     border-bottom: $border;
     border-left: $border;
     border-right: $border;
     background-color: $background;
 }
 
+.header h2 {
+    margin: $padding;
+}
+
 .chat-input {
-    width: 100%;
+    width: 50vw;
     height: 80px;
     background-color: $background;
-    position: sticky;
-    margin-top: 84vh;
+    position: absolute;
+    bottom: 0;
+    
+    //margin-top: 84vh;
 }

@@ -1,13 +1,67 @@
 @import '../../styles.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .contact-main {
     height: 100%;
     width: 25vw;
     background-color: $background;
+    //border-right: $border;
 }
 
 .header {
-    border-bottom: 1px solid $border-color;
+    border-bottom: $border;
     padding: $padding;
     //height: 3dvh;
+}
+
+.active {
+    background-color: $border-color;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: $padding;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input {
+    height: 40px;
+    width: 60%;
+    background-color: $border-color;
+    //border-radius: 20px;
+    //border-color: $secondary-color;
+    padding-left: calc($padding / 2);
+    border-radius: 20px;
+    border: 1px solid $secondary-color;
+}
+
+.search-container button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background;
+    border: none;
+    margin-left: calc($padding / 2);
+}
+
+.search-container button img{
+    height: 90%;
+    width: auto;
+}
+
+.contact-content {
+    overflow-y: scroll;
+    height: 86dvh;
 }

@@ -1,0 +1,56 @@
+@import '../../styles.scss';
+
+main {
+    width: 95%;
+    height: 100px;
+    padding: 0 2.5%;
+    //outline: 1px solid beige;
+    display: flex;
+    flex-direction: row;
+    background-color: $background;
+}
+
+main:hover {
+    background-color: $border-color;
+}
+
+.active {
+    background-color: $border-color;
+}
+
+.logo-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //outline: 1px solid red;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    //padding-right: $padding;
+}
+
+.content-container p {
+    font-weight: 100;
+    margin-left: calc($padding / 2);
+    
+}
+
+.cut-text {
+    width: 80%;
+    height: 1rem;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    
+    
+}
+
+.name {
+    margin: calc($padding / 2);
+}
